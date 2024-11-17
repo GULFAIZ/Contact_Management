@@ -11,7 +11,7 @@ app.use(cors());
 app.use('/api/contacts', contactRoutes);
 
 // MongoDB Connection
-mongoose.connect('mongodb+srv://GULLU:FQlIVPKgb3mx6mIY@cluster0.hrobpqi.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://GULLU:<password>@cluster0.hrobpqi.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB'))
   .catch((err) => console.error('Failed to connect to MongoDB:', err));
 
